@@ -1,7 +1,7 @@
 #!/bin/bash
 function checking_sc() {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://dpvpn.berkahost.my.id/sc/register | awk '{print $4}')
+    IZIN=$(curl -sS https://dpvpn.berkahost.my.id/sc/Register | awk '{print $4}')
 
     if echo "$IZIN" | grep -wq "$MYIP"; then
         echo "Izinnya Di Terima Beb"
